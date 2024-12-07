@@ -1,0 +1,16 @@
+[project]
+name = "ffxiv-bot"
+version = "0.1.0"
+description = "ffxiv-bot"
+readme = "README.md"
+requires-python = ">=3.9, <4.0"
+
+[tool.nonebot]
+adapters = [
+    { name = "QQ", module_name = "nonebot.adapters.qq" },
+
+    { name = "开黑啦", module_name = "nonebot.adapters.kaiheila" },
+]
+plugins = []
+plugin_dirs = ["ffxiv_bot/plugins"]
+builtin_plugins = ["echo"]
